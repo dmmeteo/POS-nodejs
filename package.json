@@ -1,18 +1,17 @@
 {
   "name": "pos-nodejs",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "development": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dmmeteo/POS-nodejs.git"
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dmmeteo/POS-nodejs/issues"
-  },
-  "homepage": "https://github.com/dmmeteo/POS-nodejs#readme"
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
