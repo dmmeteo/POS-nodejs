@@ -1,11 +1,8 @@
-# Dependencies
-node_modules/
-
 # TODO: JetBrains products
 .idea/
 
-# Environment variables
-.env
+# Dependencies
+node_modules/
 
 # Created by https://www.gitignore.io/api/vim,osx,emacs,linux,macos,windows,JetBrains,sublimetext,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=vim,osx,emacs,linux,macos,windows,JetBrains,sublimetext,visualstudiocode
